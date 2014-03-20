@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="md3">
   <head>
     <title>MD3</title>
+    <!--  Configuration -->
+    <script type="text/javascript" src="config.js"></script>
+    <!-- Vendors -->
+    <script type="text/javascript" src="scripts/vendor/angular.min.js"></script>
+    <!-- Core application -->
+    <script type="text/javascript" src="scripts/app/core.js"></script>
+    <!-- Controllers -->
+    <script type="text/javascript" src="scripts/app/controllers/main.js"></script>
   </head>
   <body>
-
+    <div ng-controller="mainController">
+      {{ title }}
+    </div>
   </body>
 </html>
